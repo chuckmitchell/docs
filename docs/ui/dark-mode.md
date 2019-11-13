@@ -45,7 +45,7 @@ Force Dark is enabled by setting `android:forceDarkAllowed` to `true` in the act
 
 If you want to update your project to opt in to Force Dark, it is needed to put the following line `<item name="android:forceDarkAllowed">true</item>` in the `<project>/app/App_Recoures/Android/src/main/res/values/styles.xml` file as shown above.
 
-> Note: Make sure that `uiMode` value is included in the `android:configChanges` attribute of the main application activity in the `<project>/app/App_Recoures/Android/src/main/AndroidManifest.xml` file. Ohterwise, application will crash on interacting after changing the system appearance. A complete values string would look like: `android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"`.
+> Note: Make sure that `uiMode` value is included in the `android:configChanges` attribute of the main application activity in the `<project>/app/App_Resources/Android/src/main/AndroidManifest.xml` file. Ohterwise, application will crash on interacting after changing the system appearance. A complete values string would look like: `android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"`.
 
 ## Dark Mode for iOS
 
