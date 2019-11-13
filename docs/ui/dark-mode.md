@@ -43,9 +43,9 @@ Force Dark is enabled by setting `android:forceDarkAllowed` to `true` in the act
 
 > Important: Make sure to test your application carefully and thoroughly on both Light and Dark system appearance.
 
-If you want to update your project to opt in to Force Dark, it is needed to put the following line `<item name="android:forceDarkAllowed">true</item>` in the `<project>/app/App_Recoures/Android/src/main/res/values/styles.xml` file as shown above.
+If you want to update your project to opt in to Force Dark, it is needed to put the following line `<item name="android:forceDarkAllowed">true</item>` in the `<project>/app/App_Resources/Android/src/main/res/values/styles.xml` file as shown above.
 
-> Note: Make sure that `uiMode` value is included in the `android:configChanges` attribute of the main application activity in the `<project>/app/App_Recoures/Android/src/main/AndroidManifest.xml` file. Ohterwise, application will crash on interacting after changing the system appearance. A complete values string would look like: `android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"`.
+> Note: Make sure that `uiMode` value is included in the `android:configChanges` attribute of the main application activity in the `<project>/app/App_Resources/Android/src/main/AndroidManifest.xml` file. Ohterwise, application will crash on interacting after changing the system appearance. A complete values string would look like: `android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"`.
 
 ## Dark Mode for iOS
 
@@ -55,7 +55,7 @@ Since iOS 13, the Dark mode is enabled by default and every application built wi
 
 The support in NativeScript framework has come since version 6.2 where the complete set of native widgets has been adapted to work out of the box for both Light and Dark system appearance. Accordingly, if so far your application looked the same way in both modes, with an update to 6.2 its look might change in Dark mode and could appear to be broken.
 
-However, if you need extra time to work on your application's Dark mode support, you can opt out by including the `UIUserInterfaceStyle` key in the application's the `<project>/app/App_Recoures/iOS/Info.plist` file:
+However, if you need extra time to work on your application's Dark mode support, you can opt out by including the `UIUserInterfaceStyle` key in the application's the `<project>/app/App_Resources/iOS/Info.plist` file:
 
 ```xml
     ...
